@@ -1,5 +1,5 @@
 /*global self,caches*/
-var version = 'v19',
+var version = 'v20',
     cacheName = 'bizual-static-' + version,
     cacheFiles = [
     './',
@@ -39,7 +39,7 @@ self.onactivate = function (event) {
         if (key !== cacheName) {
           return caches.delete(key);
         }
-      });
+      }));
     })
   );
 };
